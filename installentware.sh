@@ -154,8 +154,8 @@ opkg update && opkg install shadow-login shadow-passwd shadow-useradd
     ln -sf /opt/bin/login /bin
     ln -sf /opt/bin/passwd /usr/bin/
 	ln -sf /opt/bin/useradd /usr/bin/
-    echo -e "\e[1;31mPlease set the root password.\e[0m"
-    /usr/bin/passwd
+    echo -e "\e[1;31mRemoving root password.\e[0m"
+    /usr/bin/passwd -d root
 
     # Install basic and useful utilites
     opkg install mc htop dfc lsof
@@ -163,5 +163,7 @@ opkg update && opkg install shadow-login shadow-passwd shadow-useradd
     ln -sf /opt/bin/htop /bin
     ln -sf /opt/bin/dfc /bin
     ln -sf /opt/bin/lsof /bin
+# Install dropbear
+opkg install dropbear
 # Remount filesystem as read-only
 mount -o remount,ro /
