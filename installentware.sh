@@ -1,5 +1,4 @@
 #!/bin/sh
-# Modified by iamromulan to set up a proper entware environment for Quectel RM5xx series m.2 modems
 TYPE='generic'
 #|---------|-----------------|
 #| TARGET  | Quectel Modem   |
