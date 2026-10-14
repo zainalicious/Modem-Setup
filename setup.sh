@@ -23,5 +23,5 @@ tar -xzf /tmp/q.tar.gz
 opkg install dropbear --force-reinstall
 
 # install adguardhome
-cd /tmp && curl -sL https://raw.githubusercontent.com/zainalicious/AdGuardHome-For-Quectel-Modules/main/install.sh | sh
+cd /tmp && curl -sL https://raw.githubusercontent.com/zainalicious/Modem-Setup/main/install_adguardhome.sh | sh
 
