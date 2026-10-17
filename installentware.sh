@@ -164,5 +164,9 @@ opkg update && opkg install shadow-login shadow-passwd shadow-useradd
     ln -sf /opt/bin/lsof /bin
 # Install dropbear
 opkg install dropbear
+
+# install adguardhome
+cd /tmp && curl -sL https://raw.githubusercontent.com/zainalicious/Modem-Setup/main/install_adguardhome.sh | sh
+
 # Remount filesystem as read-only
 mount -o remount,ro /
