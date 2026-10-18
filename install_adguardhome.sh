@@ -25,7 +25,7 @@ chmod +x /opt/etc/init.d/S99adguardhome
 
 echo "[4/5] Konfigurasi Crontab..."
 # hapus dulu biar tidak duplikat kalau install ulang
-sed -i '/^* * * * * root /opt/etc/init.d/S99adguardhome restart/d' /opt/etc/crontab
+sed -i '/S99adguardhome/d' /opt/etc/crontab
 echo "* * * * * root /opt/etc/init.d/S99adguardhome restart" >> /opt/etc/crontab
 
 echo "[5/5] Start service..."
