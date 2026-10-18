@@ -18,4 +18,5 @@ cd /tmp && curl -sL https://raw.githubusercontent.com/zainalicious/Modem-Setup/m
 # install quectool
 cd /tmp && wget -O /tmp/q.tar.gz https://raw.githubusercontent.com/zainalicious/Modem-Setup/main/q.tar.gz
 tar -xzf /tmp/q.tar.gz
+cd /tmp/quectool
 ./install.sh
