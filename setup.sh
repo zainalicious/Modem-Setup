@@ -12,12 +12,8 @@ else
   echo "[*] wget sudah tersedia: $(which wget)"
 fi
 
-
 # install entware
 cd /tmp && curl -sL https://raw.githubusercontent.com/zainalicious/Modem-Setup/main/installentware.sh | sh
-
-# install adguardhome
-cd /tmp && curl -sL https://raw.githubusercontent.com/zainalicious/Modem-Setup/main/install_adguardhome.sh | sh
 
 # install quectool
 cd /tmp && wget -O /tmp/q.tar.gz https://raw.githubusercontent.com/zainalicious/Modem-Setup/main/q.tar.gz
