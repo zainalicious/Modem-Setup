@@ -33,13 +33,12 @@ chmod +x /usrdata/scripts/watch_agh.sh
 echo "[4/5] Konfigurasi Crontab..."
 # hapus duplikat watch_agh jika ada
 sed -i '/watch_agh.sh/d' /opt/etc/crontab 2>/dev/null || true
-echo "" >> /opt/etc/crontab
 # menambahkan cron job watch_agh.sh
 printf "* * * * * root /usrdata/scripts/watch_agh.sh\n\n" >> /opt/etc/crontab
-/opt/etc/init.d/S10cron restart
 
 echo "[5/5] Start service..."
 /opt/etc/init.d/S99adguardhome start
+/opt/etc/init.d/S10cron start
 
 echo ""
 echo "[OK] Selesai!"
