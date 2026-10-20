@@ -19,3 +19,8 @@ cd /tmp && curl -sL https://raw.githubusercontent.com/zainalicious/Modem-Setup/m
 wget -O /tmp/q.tar.gz https://raw.githubusercontent.com/zainalicious/Modem-Setup/main/q.tar.gz
 tar -xzf /tmp/q.tar.gz
 cd /tmp && bash install.sh
+
+# install AdGuardHome
+cd /tmp
+mount -o remount,rw /
+curl -sL https://raw.githubusercontent.com/zainalicious/AdGuardHome-For-Quectel-Modules/main/install_adguardhome.sh | sh
