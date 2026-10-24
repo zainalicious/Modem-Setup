@@ -8,7 +8,7 @@ set -e
 echo "[1/4] Install AdGuardHome dari Entware..."
 opkg update
 opkg install cron
-opkg install adguardhome-go
+opkg install adguardhome-go_nohf
 
 echo "[2/4] Download file dari repo..."
 mkdir -p /opt/etc/AdGuardHome
